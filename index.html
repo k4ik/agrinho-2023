@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Projeto Agrinho - Ações que transformam o mundo</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <p class="cabecalho-titulo">Projeto Agrinho</p>
+        <nav class="cabecalho-nav">
+            <ul class="cabecalho-lista">
+                <li class="cabecalho-lista-item"><a href="#">Início</a></li>
+                <li class="cabecalho-lista-item"><a href="#">Ajude o Mundo</a></li>
+                <li class="cabecalho-lista-item"><a href="#">Sobre</a></li>
+                <li class="cabecalho-lista-item"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="nav-button" onclick="openNav()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+    </header>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="#">Início</a>
+            <a href="#">Ajude o Mundo</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h1>Ações que Transformam o Mundo</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe maxime corporis reprehenderit non, atque repellat vero possimus, praesentium eius soluta aliquid sint veniam amet voluptatem porro laboriosam fugiat earum ea.</p>
+            <article>
+                <button>Ação 1</button>
+                <button>Ação 2</button>
+                <button>Ação 3</button>
+                <button>Ação 4</button>
+                <button>Ação 5</button>
+                <button>Ação 6</button>
+            </article>
+        </section>
+        <section>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu Nome">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Seu Email">
+
+                <label for="mensagem">Mensagem</label>
+                <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem">
+
+                <button type="submit">Enviar Formulário</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Ajude o Mundo</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Agrinho</a></li>
+            <li><a href="#">Projeto Agrinho 2023</a></li>
+            <li><a href="#">Estabelecimento de Ensino</a></li>
+            <li><a href="#">Aluno</a></li>
+        </ul>
+        <ul>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+        <p>desenvolvido por k4ik</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

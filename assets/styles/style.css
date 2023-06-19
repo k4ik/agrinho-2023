@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* HEADER */
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #135B2B;
+    color: #f1f1f1;
+}
+
+.cabecalho-titulo {
+    font-size: 30px;
+}
+
+.cabecalho-nav .cabecalho-lista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho-lista .cabecalho-lista-item {
+    font-size: 20px;
+}
+
+.cabecalho-lista a {
+    color: #f1f1f1;
+}
+
+
+.nav-button {
+    display: none;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: transparent;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button i {
+    color: #000;
+}
+
+.overlay {
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;    
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover , .overlay a:hover{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 768px){
+    .nav-button {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
