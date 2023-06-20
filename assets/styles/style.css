@@ -33,7 +33,56 @@
     color: #f1f1f1;
 }
 
+/* Ações Section */
+.acoes-section {
+    background-color: #E5E8E6;
+    padding: 30px 0 60px 0;
+}
 
+.acoes-titulo {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.acoes-descricao {
+    text-align: justify;
+    width: 650px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+
+.acoes-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 80px;
+}
+
+.acoes-card {
+    width: 450px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+.acoes-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.acoes-card-descricao {
+    padding: 20px 10px;
+    background-color: #FFFFFF;
+}
+
+.acoes-card-descricao p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.acoes-card-descricao button {
+    padding: 5px 10px;
+}
 .nav-button {
     display: none;
     border: 0;
@@ -45,7 +94,7 @@
 }
 
 .nav-button i {
-    color: #000;
+    color: #f1f1f1;
 }
 
 .overlay {
