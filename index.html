@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <header id="cabecalho">
-        <p class="cabecalho-titulo">Projeto Agrinho</p>
+    <header id="cabecalho" class="cabecalho">
+        <img src="assets/images/logo.png" alt="">
         <nav class="cabecalho-nav">
             <ul class="cabecalho-lista">
                 <li class="cabecalho-lista-item"><a href="#">Início</a></li>
-                <li class="cabecalho-lista-item"><a href="#">Ajude o Mundo</a></li>
-                <li class="cabecalho-lista-item"><a href="#">Sobre</a></li>
-                <li class="cabecalho-lista-item"><a href="#">Contato</a></li>
+                <li class="cabecalho-lista-item"><a href="#acoes">Ajude o Mundo</a></li>
+                <li class="cabecalho-lista-item"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <button class="nav-button" onclick="openNav()">
@@ -27,62 +26,61 @@
 
         <div class="overlay-content">
             <a href="#">Início</a>
-            <a href="#">Ajude o Mundo</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <a href="#acoes">Ajude o Mundo</a>
+            <a href="#contato">Contato</a>
         </div>
     </div>
     <main>
-        <section class="acoes-section">
+        <section class="acoes-section" id="acoes">
             <h1 class="acoes-titulo">Ações que Transformam o Mundo</h1>
             <p class="acoes-descricao">
-                Nesta página, você encontrará ações transformadoras, incluindo a sustentabilidade. Clique em "Ver Mais" para obter mais informações sobre essas iniciativas. Junte-se a nós para construir um mundo melhor!</p>
+                Ações que transformam o mundo: cada indivíduo tem poder de fazer a diferença. Pequenas ações cotidianas, como reciclar e economizar energia, importam. Engajamento em causas coletivas fortalece o impacto. Busque conhecimento e aja. Seja a mudança que você deseja ver no mundo.</p>
             <article class="acoes-grid">
                 <div class="acoes-card">
-                    <img src="assets/images/sustentabilidade.jfif" alt="">
+                    <img src="assets/images/praticas-sustentaveis.jfif" alt="">
                     <div class="acoes-card-descricao">
-                        <p>Sustentabilidade</p>
+                        <p>Práticas sustentáveis</p>
                         <button><a href="#">Ver mais</a></button>
                     </div>
                 </div>
                 <div class="acoes-card">
-                    <img src="assets/images/sustentabilidade.jfif" alt="">
+                    <img src="assets/images/voluntariado.jfif" alt="">
                     <div class="acoes-card-descricao">
-                        <p>Sustentabilidade</p>
+                        <p>Voluntariado</p>
                         <button><a href="#">Ver mais</a></button>
                     </div>
                 </div>
                 <div class="acoes-card">
-                    <img src="assets/images/sustentabilidade.jfif" alt="">
+                    <img src="assets/images/conscientizacao-e-educacao.jfif" alt="">
                     <div class="acoes-card-descricao">
-                        <p>Sustentabilidade</p>
+                        <p>Conscientização e educação</p>
                         <button><a href="#">Ver mais</a></button>
                     </div>
                 </div>
                 <div class="acoes-card">
-                    <img src="assets/images/sustentabilidade.jfif" alt="">
+                    <img src="assets/images/consumo-consciente.jpg" alt="">
                     <div class="acoes-card-descricao">
-                        <p>Sustentabilidade</p>
+                        <p>Consumo consciente</p>
                         <button><a href="#">Ver mais</a></button>
                     </div>
                 </div>
                 <div class="acoes-card">
-                    <img src="assets/images/sustentabilidade.jfif" alt="">
+                    <img src="assets/images/participacao-politica.jfif" alt="">
                     <div class="acoes-card-descricao">
-                        <p>Sustentabilidade</p>
+                        <p>Participação política</p>
                         <button><a href="#">Ver mais</a></button>
                     </div>
                 </div>
                 <div class="acoes-card">
-                    <img src="assets/images/sustentabilidade.jfif" alt="">
+                    <img src="assets/images/empoderamento.webp" alt="">
                     <div class="acoes-card-descricao">
-                        <p>Sustentabilidade</p>
+                        <p>Apoio a comunidades marginalizadas</p>
                         <button><a href="#">Ver mais</a></button>
                     </div>
                 </div>
             </article>
         </section>
-        <section class="contato-section">
+        <section class="contato-section" id="contato">
             <h2>Contato</h2>
             <form>
                 <label for="nome">Nome</label>
@@ -113,9 +111,9 @@
                 <li><a href="#">Aluno</a></li>
             </ul>
             <ul class="social-links">
-                <li><i class="fa-brands fa-github"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </div>
         <p>desenvolvido por k4ik</p>

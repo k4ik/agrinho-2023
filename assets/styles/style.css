@@ -1,22 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     padding: 0;
     outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* HEADER */
-#cabecalho {
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     background-color: #135B2B;
     color: #f1f1f1;
 }
 
 .cabecalho-titulo {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .cabecalho-nav .cabecalho-lista {
@@ -26,31 +37,36 @@
 }
 
 .cabecalho-lista .cabecalho-lista-item {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .cabecalho-lista a {
     color: #f1f1f1;
+    text-decoration: none;
+}
+
+.cabecalho-lista a:hover {
+    transition: .2s;
+    cursor: pointer;
+    color: #d1d1d1;
 }
 
 /* Ações Section */
 .acoes-section {
     background-color: #E5E8E6;
-    padding: 30px 0 60px 0;
+    padding: 30px 0 80px 0;
 }
 
 .acoes-titulo {
     text-align: center;
     font-size: 30px;
-    padding-top: 20px;
+    padding-top: 60px;
 }
 
 .acoes-descricao {
-    text-align: justify;
-    width: 650px;
-    margin: 0 auto;
+    width: 850px;
+    margin: 0 auto 40px;
     padding-bottom: 20px;
-
 }
 
 .acoes-grid {
@@ -61,17 +77,25 @@
 }
 
 .acoes-card {
-    width: 450px;
+    width: 460px;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+.acoes-card a {
+    text-decoration: none;
+    color: #000;
 }
 
 .acoes-card img {
     width: 100%;
+    height: 200px;
     object-fit: cover;
+    background-color: #FFFFFF;
+
 }
 
 .acoes-card-descricao {
-    padding: 20px 10px;
+    padding: 20px 30px;
     background-color: #FFFFFF;
 }
 
@@ -119,6 +143,10 @@
     font-size: 18px;
 }
 
+.contato-section textarea {
+    padding: 5px 10px;
+}
+
 .contato-section button {
     margin-top: 40px;
     padding: 10px 30px;
@@ -143,6 +171,11 @@
     list-style: none;
 }
 
+.links a {
+    text-decoration: none;
+    color: #000;
+}
+
 .links .social-links {
     display: flex;
     flex-direction: row;
@@ -154,6 +187,12 @@
     text-align: center;
     padding: 60px 0 0 0;
 }
+
+.rodape a:hover {
+    color: #d1d1d1;
+}
+
+
 
 .nav-button {
     display: none;
@@ -194,7 +233,7 @@
     text-decoration: none;
     color: #818181;
     display: block;
-    font-size: 34px;
+    font-size: 24px;
     transition: 0.3s;
 }
 
@@ -209,14 +248,91 @@
     font-size: 60px;
 }
 
-@media screen and (max-height: 768px){
+@media screen and (max-width: 1024px){
+    #cabecalho {
+        flex-direction: row-reverse;
+    }
+
+    .cabecalho-nav {
+        display: none;
+    }
+
+    .acoes-grid {
+        grid-template-columns: auto;
+    }
+
     .nav-button {
         display: block;
     }
+
+    .acoes-descricao {
+        width: 750px;
+    }
+
+    .acoes-card {
+        width: 500px;
+    }
 }
 
-@media screen and (max-height: 450px){
-    .overlay a {
+@media screen and (max-width: 768px){
+    .acoes-titulo {
+        font-size: 25px;
+    }
+
+    .acoes-descricao {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .acoes-card {
+        width: 400px;
+    }
+
+    .contato-section form{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape .links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .rodape .social-links {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .acoes-titulo {
         font-size: 20px;
+    }
+
+    .acoes-descricao {
+        text-align: justify;
+    }
+
+    .acoes-card {
+        width: 370px;
+    }
+
+    .contato-section form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overlay a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .acoes-card{
+        width: 310px;
     }
 }
