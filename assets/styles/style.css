@@ -21,13 +21,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: #135B2B;
     color: #f1f1f1;
 }
 
-.cabecalho-titulo {
-    font-size: 20px;
+.cabecalho img {
+    width: 100px;
 }
 
 .cabecalho-nav .cabecalho-lista {
@@ -37,7 +37,7 @@ body {
 }
 
 .cabecalho-lista .cabecalho-lista-item {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .cabecalho-lista a {
@@ -198,7 +198,6 @@ body {
     display: none;
     border: 0;
     border-radius: 4px;
-    padding: 8px;
     background-color: transparent;
     margin: 8px;
     cursor: pointer;
@@ -308,6 +307,15 @@ body {
 }
 
 @media screen and (max-width: 425px){
+    .cabecalho {
+        position: fixed;
+        width: 100%;
+        z-index: 9;
+        padding: 5px 10px;
+    }
+
+    
+
     .acoes-titulo {
         font-size: 20px;
     }
