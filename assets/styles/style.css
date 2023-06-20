@@ -176,6 +176,11 @@ body {
     color: #000;
 }
 
+.links a:hover {
+    transition: .2s;
+    color: #d1d1d1;
+}
+
 .links .social-links {
     display: flex;
     flex-direction: row;
@@ -190,8 +195,8 @@ body {
 
 .rodape a:hover {
     color: #d1d1d1;
+    transition: .2s;
 }
-
 
 
 .nav-button {
