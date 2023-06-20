@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,8 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section class="contato-section">
+            <h2>Contato</h2>
             <form>
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Seu Nome">
@@ -91,30 +92,32 @@
                 <input type="email" name="email" id="email" placeholder="Seu Email">
 
                 <label for="mensagem">Mensagem</label>
-                <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
 
                 <button type="submit">Enviar Formulário</button>
             </form>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Ajude o Mundo</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Agrinho</a></li>
-            <li><a href="#">Projeto Agrinho 2023</a></li>
-            <li><a href="#">Estabelecimento de Ensino</a></li>
-            <li><a href="#">Aluno</a></li>
-        </ul>
-        <ul>
-            <li><i class="fa-brands fa-github"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-        </ul>
+    <footer class="rodape">
+        <div class="links">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Ajude o Mundo</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Agrinho</a></li>
+                <li><a href="#">Projeto Agrinho 2023</a></li>
+                <li><a href="#">Estabelecimento de Ensino</a></li>
+                <li><a href="#">Aluno</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+        </div>
         <p>desenvolvido por k4ik</p>
     </footer>
 

@@ -83,6 +83,78 @@
 .acoes-card-descricao button {
     padding: 5px 10px;
 }
+
+.contato-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 30px;
+}
+
+.contato-section h2 {
+    font-size: 40px;
+}
+
+.contato-section form{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-section input {
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.contato-section input::placeholder {
+    font-size: 14px;
+}
+
+.contato-section label {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.contato-section button {
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 17px;
+    background-color: #3a8152;
+    border: 1px solid black;
+    color: #eeeeee;
+}
+
+.rodape {
+    background-color: #818181;
+    padding: 40px 0 20px 0;
+}
+
+.rodape  .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.rodape p {
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
 .nav-button {
     display: none;
     border: 0;
@@ -146,11 +218,5 @@
 @media screen and (max-height: 450px){
     .overlay a {
         font-size: 20px;
-    }
-
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
     }
 }
