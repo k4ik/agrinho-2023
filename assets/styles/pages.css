@@ -44,6 +44,8 @@ body {
 
 .container-img {
     width: 900px;
+    height: 500px;
+    object-fit: cover;
     padding: 40px 0;
     
 }

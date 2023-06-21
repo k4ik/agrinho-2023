@@ -91,7 +91,11 @@ body {
     height: 200px;
     object-fit: cover;
     background-color: #FFFFFF;
+}
 
+.acoes-card img:hover {
+    transition: all .8s;
+    filter: brightness(0.6);
 }
 
 .acoes-card-descricao {
@@ -107,6 +111,17 @@ body {
 .acoes-card-descricao button {
     padding: 5px 10px;
     font-size: 14px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #135B2B;
+    background-color: #3a8152;
+    color: #fff;
+}
+
+.acoes-card-descricao button:hover {
+    transition: all .4s;
+    transform: scale(1.1);
+    background-color: #135B2B;
 }
 
 .contato-section {
@@ -133,6 +148,7 @@ body {
     margin-bottom: 30px;
     padding: 5px 10px;
     font-size: 18px;
+    border: 1px solid;
 }
 
 .contato-section input::placeholder {
@@ -148,13 +164,20 @@ body {
     padding: 5px 10px;
 }
 
-.contato-section button {
+.contato-section form button {
     margin-top: 40px;
     padding: 10px 30px;
     font-size: 17px;
     background-color: #3a8152;
-    border: 1px solid black;
+    border: 1px solid #135B2B;
     color: #eeeeee;
+    border-radius: 8px;
+}
+
+.contato-section form button:hover {
+    transition: all .4s;
+    transform: scale(1.03);
+    background-color: #135B2B;
 }
 
 .rodape {
@@ -315,10 +338,8 @@ body {
         padding: 5px 10px;
     }
 
-    
-
     .acoes-titulo {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .acoes-descricao {
@@ -341,6 +362,10 @@ body {
 }
 
 @media screen and (max-width: 375px){
+    .acoes-titulo {
+        font-size: 17px;
+    }
+
     .acoes-card{
         width: 310px;
     }
