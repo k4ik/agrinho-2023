@@ -101,7 +101,7 @@ body {
 
 .acoes-card-descricao p {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .acoes-card-descricao button {
@@ -119,7 +119,7 @@ body {
 }
 
 .contato-section h2 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .contato-section form{
@@ -318,7 +318,7 @@ body {
     
 
     .acoes-titulo {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .acoes-descricao {
