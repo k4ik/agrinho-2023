@@ -27,7 +27,7 @@ body {
 }
 
 .cabecalho img {
-    width: 100px;
+    width: 30px;
 }
 
 .cabecalho-nav .cabecalho-lista {
@@ -101,11 +101,12 @@ body {
 
 .acoes-card-descricao p {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .acoes-card-descricao button {
     padding: 5px 10px;
+    font-size: 14px;
 }
 
 .contato-section {

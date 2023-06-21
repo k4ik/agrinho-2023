@@ -32,11 +32,14 @@ body {
 
 .container-subtitulos {
     font-size: 20px;
+    background-color: rgba(151, 227, 151, 0.471);
+    color: rgb(9, 47, 9);
 }
 
 .container p {
     font-size: 16px;
     padding-bottom: 30px;
+    text-align: justify;
 }
 
 .container-img {
@@ -77,6 +80,10 @@ body {
 }
 
 @media screen and (max-width: 425px){
+    .container {
+        padding: 0 10px;
+    }
+
     .container-titulo {
         padding-top: 80px;
     }
