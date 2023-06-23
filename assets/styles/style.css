@@ -94,11 +94,6 @@ body {
     background-color: #FFFFFF;
 }
 
-.acoes-card img:hover {
-    transition: all .8s;
-    filter: brightness(0.6);
-}
-
 .acoes-card-descricao {
     padding: 20px 30px;
     background-color: #FFFFFF;
