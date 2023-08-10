@@ -79,6 +79,8 @@ body {
 .acoes-card {
     width: 460px;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    padding: 10px;
 }
 
 .acoes-card a {
@@ -89,35 +91,36 @@ body {
 .acoes-card img {
     width: 100%;
     height: 200px;
-    padding: 10px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.19);
     object-fit: cover;
-    background-color: #FFFFFF;
+}
+
+.acoes-card img:hover {
+    transition: all .3s;
+    filter: brightness(0.5);
 }
 
 .acoes-card-descricao {
-    padding: 20px 30px;
-    background-color: #FFFFFF;
-}
-
-.acoes-card-descricao p {
-    margin-bottom: 10px;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    font-size: 16px;
 }
 
 .acoes-card-descricao button {
-    padding: 5px 10px;
     font-size: 14px;
-    border-radius: 8px;
-    outline: none;
-    border: 1px solid #135B2B;
-    background-color: #3a8152;
-    color: #fff;
+    height: 20px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: #000000;
 }
 
 .acoes-card-descricao button:hover {
-    transition: all .4s;
-    transform: scale(1.1);
-    background-color: #135B2B;
+    transition: .2s;
+    background-color: #7ac693;
 }
 
 .contato-section {
