@@ -24,6 +24,9 @@ body {
     padding: 10px 20px;
     background-color: #135B2B;
     color: #f1f1f1;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
 }
 
 .cabecalho img {
@@ -52,6 +55,20 @@ body {
 }
 
 /* Ações Section */
+.background {
+    width: 100%;
+    height: 600px;
+    background: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
 .acoes-section {
     background-color: #E5E8E6;
     padding: 30px 0 80px 0;
@@ -63,10 +80,19 @@ body {
     padding-top: 60px;
 }
 
+.acoes-cta {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
 .acoes-descricao {
     width: 850px;
-    margin: 0 auto 40px;
-    padding-bottom: 20px;
+    margin: 0 auto 10px;
+}
+
+.acoes-descricao:nth-child(3){
+    margin-bottom: 40px;
 }
 
 .acoes-grid {
@@ -119,6 +145,7 @@ body {
 }
 
 .acoes-card-descricao button:hover {
+    cursor: pointer;
     transition: .2s;
     background-color: #7ac693;
 }
@@ -187,7 +214,7 @@ body {
 }
 
 .rodape {
-    background-color: #c8c8c8;
+    background-color: #c7c3c3;
     padding: 40px 0 20px 0;
 }
 
@@ -203,7 +230,6 @@ body {
 
 .links a {
     text-decoration: none;
-    color: #000;
 }
 
 .links .social-links {
@@ -353,12 +379,19 @@ body {
         padding: 5px 10px;
     }
 
-    .acoes-titulo {
+    .acoes-cta {
         font-size: 20px;
+    }
+
+    .acoes-titulo {
+        font-size: 30px;
+        margin-bottom: 10px;
     }
 
     .acoes-descricao {
         text-align: justify;
+        font-size: 16px;
+        color: #000000;
     }
 
     .acoes-card {
@@ -382,7 +415,7 @@ body {
 
 @media screen and (max-width: 375px){
     .acoes-titulo {
-        font-size: 17px;
+        font-size: 25px;
     }
 
     .acoes-card{
