@@ -1,10 +1,13 @@
-# Agrinho - 2023
-<img src="https://cdn.discordapp.com/attachments/1129232473470029864/1139357531442004098/image.png" alt="foto do projeto">
+# "Agrinho: Ações que transformam o mundo"
+> An interactive platform showcasing practical actions individuals can take to create positive global change through sustainability, education, and conscious living.
 
-## Deploy
-<nav>
-  <ul>
-    <li><a href="https://k4ik.github.io/projeto-agrinho/" target="_blank">Github Pages</a></li>
-    <li><a href="https://acoes-que-transformam-o-mundo.vercel.app/" target="_blank">Vercel</a></li>
-  </ul>
-</nav>
+## 📸 Screenshots
+<img src="screenshot.png" alt="screenshot" />
+
+## 🛠️ Built With
+- HTML5
+- CSS3
+- JavaScript
+
+## 🌍 Live Demo
+- 🔗 [View Live Demo](https://k4ik.github.io/agrinho-2023)
